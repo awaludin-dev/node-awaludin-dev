@@ -5,16 +5,20 @@ const readline = require("readline").createInterface({
 
 readline.question(`Input C: `, (c) => {
   readline.question(`Input K: `, (k) => {
-    if(c > k) [c, k] = [k, c];
+    if (c > k) [c, k] = [k, c];
     var total = 0;
     var check = [];
     for (let i = c; i <= k; i++) {
       if (i % 3 === 0) {
         if (check.length === 0) check[0] = parseInt(i);
         else {
-          let compare1 = parseInt(check[check.length - 1] / 10);
-          let compare2 = parseInt(i / 10);
-          if (compare1 !== compare2) check.push(i);
+          let checking = true;
+          for (let j = 0; j < check.length; j++) {
+            let compare1 = String(check[j]).substring(0, 1);
+            let compare2 = String(i).substring(0, 1);
+            if (compare1 === compare2) checking = false;
+          }
+          if (checking) check.push(i);
         }
       }
     }
