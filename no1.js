@@ -5,6 +5,7 @@ const readline = require("readline").createInterface({
 
 readline.question(`Input C: `, (c) => {
   readline.question(`Input K: `, (k) => {
+    if(c > k) [c, k] = [k, c];
     var total = 0;
     for (let i = c; i <= k; i++) {
       if (i % 3 === 0) {
