@@ -2,15 +2,16 @@
   "name": "awaludin-dev",
   "version": "1.0.0",
   "description": "Learn NodeJS for MERN stack",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "author": "awaludin-dev",
   "license": "ISC",
   "dependencies": {
     "excel4node": "^1.7.2",
+    "express": "^4.17.1",
     "moment": "^2.29.1"
   }
 }
