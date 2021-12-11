@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi - Awaludin Nasir Ubadah</title>
+    <script src="https://kit.fontawesome.com/59271f1844.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/tag.css">
+</head>
+<body>
+    <%- include('header'); %>
+    <main>
+        <div class="title">
+            <h1>My Portfolio</h1>
+        </div>
+        <div class="biografi" id="biografi">
+            <h3>Biografi</h3>
+            <p>Halo semuanya, perkenalkan nama saya Awaludin Nasir Ubadah biasa dipanggil Udin. Saat ini saya sedang kuliah di Universitas Udayana mengambil jurusan Informatika. Selain kuliah, saya juga sering membantu orang tua berjualan untuk menambah uang saku juga. Sebenarnya di kuliah saya belum belajar Pemrograman Web, saya baru belajar Pemrograman Web saat memasuki Organisasi.</p>
+        </div>
+        <div class="skills" id="skills">
+            <div class="skill-1">
+                <h3>Skills</h3>
+                <ol>
+                    <li>C</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ol>
+            </div>
+            <div class="skill-2">
+                <h3>Other Skills</h3>
+                <ul>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+        <div class="friends" id="friends">
+            <h3>My Close Friends</h3>
+            <table border="1px" cellspacing="0" cellpadding="2">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="nama">Andhika Dwiky Pratama</td>
+                        <td>Madiun</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="nama">Ade Setyawan</td>
+                        <td>Madiun</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="nama">Muhammad Zuhal Dzikru Rahmat</td>
+                        <td>Bali</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="contact" id="contact">
+            <h3>Contact Me</h3>
+            <div class="form">
+                <p>Email : <input type="email" id="text"></p>
+                <p>Message : <textarea name="message" id="text" cols="20" rows="6"></textarea></p>
+                <input type="submit" value="send" class="send">
+            </div>
+        </div>
+        <div class="socmed" id="socmed">
+            <h1>Social Media</h1>
+            <a href="https://instagram.com/aww_udin"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/awaludin.ubadah"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/awaludin-dev"><i class="fab fa-github"></i></a>
+        </div>
+    </main>
+    <%- include('footer'); %>
+</body>
+</html>

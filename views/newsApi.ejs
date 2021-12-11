@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API</title>
+    <link rel="stylesheet" href="/css/newsApi.css">
+    <link rel="stylesheet" href="/css/tag.css">
+</head>
+<body>
+    <%- include('header'); %>
+    <main>
+        <div id="cat"></div>
+        <h1>News API</h1>
+        <input type="text" placeholder="CARI" width="100%" id="search">
+        <div id="news"></div>
+    </main>
+    <script src="/javascript/newsApi.js"></script>
+    <%- include('footer'); %>
+</body>
+</html>
