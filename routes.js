@@ -12,9 +12,4 @@ router.get('/news-api', (req, res) => {
     res.render('newsApi.ejs');
 })
 
-router.use(function(req,res) {
-    res.status(404);
-    res.render('404.ejs');
-})
-
 module.exports = router;
