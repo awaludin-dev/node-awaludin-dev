@@ -29,9 +29,12 @@ const getJadwalByWeek = async (req, res) => {
 }
 
 const createJadwal = async (req, res) => {
-    const {week, jadwal} = req.body
     try{
-        await Jadwal.create({week, jadwal});
+        await Jadwal.create({
+            id: req.query.id,
+            week: req.query.week,
+            jadwal: req.query.jadwal
+        });
         res.json({
             'message': 'Jadwal Created!'
         })
@@ -42,9 +45,13 @@ const createJadwal = async (req, res) => {
 
 const updateJadwal = async (req, res) => {
     try {
-        await Jadwal.update(req.body, {
+        await Jadwal.update({
+            id: req.query.id,
+            week: req.query.week,
+            jadwal: req.query.jadwal
+        }, {
             where: {
-                id: req.params.id
+                week: req.params.week
             }
         });
         res.json({
@@ -59,7 +66,7 @@ const deleteJadwal = async (req, res) => {
     try {
         await Jadwal.destroy({
             where: {
-                id: req.params.id
+                week: req.params.week
             }
         })
         res.json({
